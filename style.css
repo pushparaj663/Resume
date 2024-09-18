@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+background: #ffffff;
+border: 30px solid rgb(91, 0, 119);
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 3000px;
+    background: rgb(255, 255, 255);
+    margin: 50px;
+    box-shadow: 0 30px 55px rgba(0,0,0,0,1);
+}
+img{
+    width: 200px;
+    height: 250px;
+}
+.top{
+    position:relative ;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#231fbf,#69175f);
+    padding: 50px;
+
+
+
+}
+h2{
+    font-size:3em ;
+    color:rgb(255, 255, 255);
+    text-decoration: uppercase;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+
+}
+h2 span{
+    font-size: 0.4em;
+}
+.group {
+    position: relative;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr ;
+}
+.details{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;
+}
+.education{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;
+
+}
+.skill{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;
+}
+.hobby{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;
+
+}
+.lang{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;
+}
+.stren{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;   
+}
+#one{
+    background-color:black;
+    display: flex;
+    color: white;
+    padding-left: 20px;
+}
+#sec{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;
+}
+#three{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;
+  
+}
+#seven{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;
+}
+#the{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: white;
+    padding-left: 20px;
+}
+#four{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;  
+}
+#id{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;  
+}
+#five{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;  
+
+}
+#six{
+    background-color: black;
+    display: inline block;
+    color: white;
+    padding-left: 20px;  
+
+}
+.pro{
+    font-family: sans-serif;
+    line-height: 1cm;
+    letter-spacing: 0.1em;
+    font: bold;
+}

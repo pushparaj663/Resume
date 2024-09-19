@@ -7,6 +7,120 @@
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
 </head>
+<style>
+    .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    width: 80%;
+}
+
+.right {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(47, 73, 21);
+}
+
+h1 {
+    position: relative;
+    top: -150px;
+    left: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+table {
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px;
+    background-color: rgb(47, 73, 21);
+    padding: 50px;
+    font-family: sans-serif;
+    position: relative;
+    right: 100px; /* Adjust positioning */
+}
+
+.per {
+    color: white;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    position: relative;
+    top: -40px;
+    left: -355px;
+}
+
+
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    h1 {
+        position: static; 
+        font-size: 1.5em; 
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    table {
+        width: 100%; 
+        padding: 20px; 
+        right: 0; 
+    }
+
+    .per {
+        left: 0; 
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    h1 {
+        font-size: 1.8em; 
+    }
+
+    table {
+        width: 90%; 
+        padding: 30px; 
+    }
+}
+
+
+@media (min-width: 901px) {
+    .main {
+        flex-direction: row; 
+        height: 600px; 
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    table {
+        width: auto; 
+        padding: 50px; 
+    }
+}
+
+</style>
 <body>
     <div class="main">
         <div class="left">

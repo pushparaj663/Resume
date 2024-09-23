@@ -4,297 +4,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website Design</title>
-    <link rel="stylesheet" href="style.css">
-    <!----Font awesome cdn  font icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head> 
 <style>
-*{
-    box-sizing: border-box;
-    padding: 0;
+body {
     margin: 0;
-    font-family: poppins,sans-serif;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(255, 216, 166);
+}
+
+.hero {
+    width: 100%;
+    height: auto; /* Change from 50% to auto for better responsiveness */
+}
+
+#hp {
+    width: 20%;
+    height: auto; /* Change from 20% to auto */
+    display: flex;
+    margin-right:200px;
+  /* Centering the image */
+    border-radius: 90px;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 4px 4px 30px rgb(0, 0, 0);
+}
+
+.logo {
+    max-height: 50px;
+    height: 60%;
+}
+
+a {
     text-decoration: none;
 }
-body{
-    overflow-x: hidden;
-}
-.hero-header{
-    width:100%;
-    height: 100%;
-    min-height: 100vh;
-    background: #222;
-}
-.wrapper{
-    width:1280px;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-header{
-    padding: 40px 0 30px;
+
+nav {
+    padding: 20px 10%; /* Responsive padding */
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    z-index: 100;
 }
-.logo{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo i{
-    height: 45px;
-    width:45px;
-    background-color: #007ced;
-    border-radius: 50%;
-    color:#fff;
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    text-align: center;
-    
-}
-.logo .logo-text{
-    font-size: 24px;
-    font-weight: 500;
-    color:#fff;
-}
-nav .togglebtn{
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top:45px;
-    right: 3%;
-    z-index: 5;
-    cursor: pointer;
-    display: none;
-}
-nav .togglebtn span{
-    display: block;
-    background-color: #007ced;
-    margin: 5px 0px;
-    width:100%;
-    height:3px;
-    transition: 0.3s;
-    transition-property:  transform, opacity;
 
-}
-nav .navlinks{
-    list-style-type: none;
-}
-nav .navlinks li{
+nav ul li {
+    list-style: none;
     display: inline-block;
+    padding: 10px 20px;
 }
-nav .navlinks li a{
-     color:#e5e5e5;
-     margin-right: 2.5rem;
-}
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top:4rem;
-}
-.container .hero-pic{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 15px solid #444;
-    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
-}
-.hero-pic img{
-    height: 100%;
-    width:100%;
-    transition: 0.5s;
-}
-.hero-pic img:hover{
-    transform: scale(1.2);
-}
-.hero-text{
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-}
-.hero-text h5{
-    color:#e5e5e5;
-    font-size: 14px;
-}
-.hero-text h5 span{
-    color:#007ced;
-    font-size: 16px;
-}
-.hero-text h1{
-    color: #007ced;
-    font-size: 3rem;
-}
-.hero-text p{
-    color:#e5e5e5;
 
+nav ul li a {
+    color: rgb(255, 0, 0);
+    position: relative;
+    padding: 5px 0;
+}  
+
+nav ul li a:hover {
+    color: #ff0000;
 }
-.btn-group{
-    margin:45px 0;
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #ff0000;
+    transition: 1s;
+    bottom: 0;
 }
-.btn-group .btn{
-    border-color: #d5d5d5;
-    color:#fff;
-    background-color: #333;
-    padding: 12px 25px;
-    margin: 5px 0px;
-    margin-right:7px;
-    border-radius: 30px;
-    border:2px solid #e5e5e5;
-    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+
+nav ul li a:hover:after {
+    width: 100%;
 }
-.btn.active{
-    border-color: #007ced;
+
+.content {
+    position: relative; /* Changed from absolute for better layout */
+    text-align: center; /* Center text for responsiveness */
+    padding: 20px; /* Add padding for smaller screens */
 }
-.hero-text .social i{
-    color: #e5e5e5;
-    font-size: 18px;
-    margin-right: 10px;
-    transition: 0.5s;
+
+.content .title {
+    color: black;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(170deg, #3f3f3f 20.69%, #f17500 50.19%, #ff002b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  display:flex;
 }
-.hero-text .social i:hover{
-    color:#007ced;
-    transform: rotate(360deg);
+
+.con {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    background: linear-gradient(170deg, #fed51c 20.69%, #f17500 50.19%, #ff002b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration-line: underline;
+    font-size: 2.5em;
 }
-/* Respnosiv design & displaying navbar for small screen */
-@media(max-width:930px)
-{
-    nav .togglebtn{
-        display: initial;
-    }
-    /* for toggle button**/
-    .click {
-        top:45px;
-    }
-    .click span{
-        position: absolute;
-        margin-top:12px
-    }
-    .click span:first-child{
-        transform: rotate(-40deg);
-    }
-    .click span:nth-child(2)
-    {
-        opacity: 0;
-        margin:0;
-    }
-    .click span:last-child{
-        transform: rotate(45deg);
-        top:0;
-    }
-    nav .navlinks{
-        position: absolute;
-        top:110px;
-        right:-100%;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
-        transition: 0.5s;
-        padding: 25px 0px;
-    }
-    nav .navlinks li{
-        display: block;
-    }
-    nav .navlinks li a{
-        display: block;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    nav .navlinks.open{
-        right:0;
+
+.content h1 {
+    color: black;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 90px;
+    width: 70%;
+}
+
+.content h1 span {
+    color: #cc0505;
+}
+
+p {
+    color: black;
+    width: 55%;
+    margin-bottom: 30px;
+    margin-top: 25px;
+  
+  
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-@media(max-width:768px)
-{
-    .container{
-        flex-direction: column;
-        padding-top:2rem
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #hp {
+        width: 30%;
+         height:50%;
+      margin-left:600px;
+      margin-top: 100px;
+      display: flex;
     }
-    .hero-text{
-        padding:40px 0px;
+
+    nav ul li {
+        padding: 10px 15px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+      display: flex;
+      margin-left:0px;
+    }
+  .title{
+    diplay: flex;
+   margin-right:600px;
+  }
+
+    p {
+        width: 40%;
+      display: flex;
+      margin-right:20px;
+    
+     
+      
+    }
+}
+
+@media (max-width: 768px) {
+    #hp {
+        width: 50%;
+      margin:  auto
+    }
+
+    nav {
+        padding: 10px 5%;
+    }
+
+    nav ul li {
+        padding: 10px 10px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #hp {
+        width: 70%;
+        margin-top: 50px; 
+margin:  auto/* Adjust margin for smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items */
+        align-items: center; /* Center align */
+    }
+
+    nav ul {
+        padding: 0; /* Remove padding */
+    }
+
+    .content .title {
+        font-size: 1.5em;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    p {
+        width: 95%;
     }
 }
 </style>
+
 <body>
-  <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-a"></i>
-                    <div class="logo-text">RAJU A</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                 <div class="hero-pic">
-                    <img src="images/main_photo.jpg" alt="profile pic">
-                 </div>
-                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Web Developer</span></h5>
-                    <h1>Pushparaj A</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum 
-                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo, 
-                        autem molestiae!
-                    </p>
+    <div class="hero">
+        <nav class="fade-in">
+            <img src="cover.png" class="logo">
+            <ul>
+                <li><a href="a">HOME</a></li>
+                <li><a href="a">ABOUT</a></li>
+                <li><a href="a">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <article class="fade-in">
+            <img id="hp" src="raju.png">
+        </article>
 
-                    <div class="btn-group">
-                       <a href="#" class="btn active">Download CV</a>
-                       <a href="#" class="btn">Contact</a>
-                    </div>
-
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
-                    </div>
-                 </div>
-            </div>
+        <div class="content">
+            <span class="title fade-in">Web Developer</span>
+            <h1 class="fade-in">Hello, I'm <span> Pushparaj</span></h1>
+            <p class="fade-in">To build responsive and visually appealing web applications that enhance user experience and meet client needs effectively. I am focused on mastering front-end and back-end technologies to create robust and secure web solutions</p>
         </div>
-     </div>
-     <!---typed js for typing text effect-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-     <script>
-        /** creating button click show hide navbar **/
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
-
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
-
-        var typed=new Typed(".input",{
-            strings:["Frontend Developer","UX Designer","Web Developer"],
-            typedSpeed:70,
-            backSpeed:55,
-            loop:true
-        })
-     </script>
+    </div>
 </body>
 </html>
